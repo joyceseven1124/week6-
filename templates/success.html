@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>week4作業</title>
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:3000/static/successful.css">
+    </head>
+
+    <body>
+        <div class="success">
+            <div class="success_top"><b>歡迎光臨，這是會員頁面</b></div>
+            <div class="success_under">{{name}}，歡迎登入系統</div>
+            <a href="http://127.0.0.1:3000/signout">登出系統</a>
+        </div>
+
+        <hr/>
+
+        <div class="message_input">
+            <form action="/message" method="post">
+                <div><b>快來留言喔</b></div>
+                <textarea class="message_input_text" type="text" name="content" rows="6" cols="40" required>輸入想輸入的內容....</textarea>
+                <button class="message_input_send">送出</button>
+            </form>
+        </div>
+        
+
+        <hr/>
+        <div class="message_output">
+            {% for x in messageall %}
+                <div>{{x.author}}:{{x.content}}</div>
+            {% endfor %}
+
+            
+        </div>
+
+    </body>
+</html>

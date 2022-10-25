@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>week4作業</title>
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:3000/static/home.css"/>
+    </head>
+
+    <body>
+
+        
+        <div class="home">
+            <div class="home_word"><b>歡迎光臨，請註冊登錄系統</b></div>
+        </div>
+
+        
+
+        <div class="signup">
+            <form class="signup_form" action="/signup" method="POST">
+
+                <div class="login_form_word"><b>註冊帳號</b></div>
+
+                <div class="signup_form_name">
+                    姓名<input type="text" name="name" maxlength="255"/>
+                </div>
+
+                <div class="signup_form_username">
+                    帳號<input type="text" name="username" maxlength="255"/>
+                </div>
+                
+                <div class="signup_form_password">
+                    密碼<input type="password" name="password" maxlength="255"/>
+                </div>
+
+                <button>註冊</button>
+            </form>
+        </div>
+
+        <hr/>
+
+        <div class="login">
+            <form class="login_form" action="/signin" method="POST">
+                <div class="login_form_word"><b>登入系統</b></div>
+
+                <div class="login_form_usernamet">
+                    帳號<input type="text" name="username" maxlength="255"/>
+                </div>
+
+                <div class="login_form_password">
+                    密碼<input type="password" name="password" maxlength="255"/>
+                </div>
+                <button>登入</button>
+            </form>
+        </div>
+
+       
+
+    </body>
+</html>

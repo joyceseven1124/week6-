@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+}
+
+.success{
+    width: 100%;
+}
+
+.success_top{
+    background:linear-gradient(to bottom, rgb(50, 39, 129), rgb(74, 143, 189));
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.success_under{
+    margin-bottom: 20px;
+}
+
+.message_input{
+    margin-top: 30px;
+}
+
+hr{
+    margin-top: 40px;
+}
+
+.message_input{
+    display: inline-flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+.message_input_text{
+    margin-top: 20px;
+}
+
+.message_input_send{
+    display: block;
+    margin-left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%);
+}
